@@ -10,8 +10,8 @@ const otpStore = new Map();
 
 const transporter = nodemailer.createTransport({
     service: 'gmail', 
-    secure: true,
-    port: 465,   //Gmail generally operates on it.
+    secure: false,
+    port: 587,   //Gmail generally operates on it.
     auth: {
         user: process.env.EMAIL,  // Email address through which email is sent (e.g., your email@gmail.com)
         pass: process.env.PASSWORD,
