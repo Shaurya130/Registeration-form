@@ -1,1 +1,1 @@
-export const  DB_NAME = "Trained&Tuned-25"
+export const DB_NAME = "TrainedTuned";

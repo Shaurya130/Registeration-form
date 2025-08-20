@@ -1,9 +1,14 @@
 import { Router } from "express";
 // const { registerStudent, verifyStudentRegistration } = require("../controller/student.controller");
 
-import { registerStudent, resendOTP, verifyCaptcha, verifyStudentRegistration } from "../controller/student.controller.js";
+import {
+  registerStudent,
+  resendOTP,
+  verifyCaptcha,
+  verifyStudentRegistration,
+} from "../controller/student.controller.js";
 
-const router=Router();
+const router = Router();
 
 router.route("/register").post(registerStudent);
 
@@ -13,4 +18,4 @@ router.route("/verify-captcha").post(verifyCaptcha);
 
 router.route("/resend-otp").get(resendOTP);
 
-export default router
+export default router;
